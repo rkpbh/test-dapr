@@ -24,9 +24,9 @@ serviceAccount:
   name: ""
 
 podAnnotations: {
-  "dapr.io/enabled": "true"
-  "dapr.io/app-id": "alert-processing"
-  "dapr.io/app-port": "5001"
+  dapr.io/enabled: "true",
+  dapr.io/app-id: "alert-processing",
+  dapr.io/app-port: "5001"
 }
 
 podSecurityContext: {}
