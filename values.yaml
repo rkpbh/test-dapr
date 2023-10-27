@@ -23,7 +23,11 @@ serviceAccount:
   # If not set and create is true, a name is generated using the fullname template
   name: ""
 
-podAnnotations: {}
+podAnnotations: {
+  "dapr.io/enabled": "true"
+  "dapr.io/app-id": "alert-processing"
+  "dapr.io/app-port": "5001"
+}
 
 podSecurityContext: {}
   # fsGroup: 2000
